@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="join.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="join">
+    <div>
+      <h2>회원가입</h2>
+    </div>
+    <div>
+      <table class="join-table">
+        <!-- <caption>회원 기본정보</caption> -->
+        <colgroup>
+          <col style="width:150px">
+          <col style="height: auto;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th scope="row">아이디</th>
+            <td>
+              <input type="text" id="member_id" name="member_id">
+              <span></span>
+              (영문소문자/숫자, 4~16자)
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">비밀번호</th>
+            <td>
+              <input type="password" id="member_pass" name="member_pass">
+              <span></span>
+              (영문대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">비밀번호확인</th>
+            <td>
+              <input type="password" id="member_pass_cr" name="member_pass_ce">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">이름</th>
+            <td>
+              <input type="text" id="member_name" name="member_name">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">휴대전화</th>
+            <td>
+              <select name="mobile[]" id="mobile1">
+                <option value="010">010</option>
+                <option value="010">011</option>
+                <option value="010">016</option>
+                <option value="010">017</option>
+                <option value="010">018</option>
+                <option value="010">019</option>
+              </select>
+              -
+              <input type="text" id="mobile2" name="mobile[]" maxlength="4">
+              -
+              <input type="text" id="mobile3" name="mobile[]" maxlength="4">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">이메일</th>
+            <td>
+              <input type="email" name="email" id="email">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#none" class="submit" onclick="">회원가입</a>
+    </div>
+  </div>
+</body>
+</html>
