@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    //  alert("3333")
+    $(document).ready(function () {
+      // alert("1111"); 
+      $(".email-signup").hide();
+      $("#signup-box-link").click(function () {
+        $(".email-login").fadeOut(100);
+        $(".email-signup").delay(100).fadeIn(100);
+        $("#login-box-link").removeClass("active");
+        $("#signup-box-link").addClass("active");
+      });
+      $("#login-box-link").click(function () {
+        $(".email-login").delay(100).fadeIn(100);
+        $(".email-signup").fadeOut(100);
+        $("#login-box-link").addClass("active");
+        $("#signup-box-link").removeClass("active");
+      });
+    });
+    function login_check() {
+      const email = document.querySelector("#email_login")
+      const pass = document.querySelector("#pass_login")
+      if (email.value == "") {
+        alert("Email를 입력해주세요")
+        email.focus()
+      } else if (pass.value == "") {
+        alert("PassWord를 입력해주세요")
+        pass.focus()
+      } else {
+        Login_form.submit()
+      }
+
+    }
+
+      function signup_check() {
+        const email_signup = document.querySelector("#email_signup")
+        const pass_signup = document.querySelector("#pass_signup")
+        const confirm_pass = document.querySelector("#confirm_pass")
+// 빈값
+        if (email_signup.value == "") {
+          alert("Email를 입력해주세요")
+          email_signup.focus()
+        } else if (pass_signup.value == "") {
+          alert("Password를 입력해주세요")
+          pass_signup.focus()
+        } else if (confirm_pass.value == "") {
+          alert("confirm password를 입력해주세요")
+          confirm_pass.focus()
+        } else {
+          signup_form.submit()
+        }
+
+      }//sign_check
+// 2개의 값을 비교
+      function pass_check(){
+        // alert("password가 일치하지 않는다")
+        const pass_signup = document.querySelector("#pass_signup")
+        const confirm_pass = document.querySelector("#confirm_pass")
+        if(pass_signup.value != "" && confirm_pass.value != ""){
+          if(pass_signup.value == confirm_pass.value){
+            alert("비밀번호가 일치합니다")
+          }else{
+            alert("비밀번호가 일치하지 않습니다.")
+            pass_signup.value ="" 
+            confirm_pass.value = ""
+            pass_signup.focus()
+            
+          }
+        }
+      }
+    
+  </script>
+  <link rel="stylesheet" href="login.css">
+  <!-- <link rel="stylesheet" href="login.js"> -->
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Login -->
+  <div class="login-box">
+    <div class="lb-header">
+      <a href="#" class="active" id="login-box-link">Login</a>
+      <a href="#" id="signup-box-link">Sign Up</a>
+    </div>
+    <!-- social login -->
+    <div class="social-login">
+      <a href="#">
+        <i class="fa fa-facebook fa-lg"></i>
+        Login in with facebook
+      </a>
+      <a href="#">
+        <i class="fa fa-google-plus fa-lg"></i>
+        log in with Google
+      </a>
+    </div>
+    <!-- email login -->
+    <form class="email-login" name="Login_form" action="#" method="get">
+      <div class="u-form-group">
+        <input type="email" placeholder="Email" name="email" id="email_login" />
+      </div>
+      <!-- password login -->
+      <div class="u-form-group">
+        <input type="password" placeholder="Password" name="pass" id="pass_login" />
+      </div>
+      <!-- login button -->
+      <div class="u-form-group">
+        <button type="button" onclick="login_check()">Log in</button>
+      </div>
+      <!-- forgot password -->
+      <div class="u-form-group">
+        <a href="#" class="forgot-password">Forgot password?</a>
+      </div>
+    </form>
+    <!-- email signup -->
+    <form class="email-signup" name="signup_form" action="#" method="get">
+      <div class="u-form-group">
+        <input type="email" placeholder="Email" name="email_signup" id="email_signup" />
+      </div>
+      <!-- password signup -->
+      <div class="u-form-group" n>
+        <input type="password" placeholder="Password" name="pass_signup" id="pass_signup" />
+      </div>
+      <!-- confirm password -->
+      <div class="u-form-group">
+        <input type="password" placeholder="Confirm Password" name="conf_pass" id="confirm_pass" onblur="pass_check()" />
+      </div>
+      <!-- signup check -->
+      <div class="u-form-group">
+        <button type="button" onclick="signup_check()">Sign Up</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

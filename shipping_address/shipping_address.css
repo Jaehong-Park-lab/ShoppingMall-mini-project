@@ -1,0 +1,99 @@
+.order {
+    width: 900px;
+    margin: auto;
+    height: 3000px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.shipping-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    background-color: white;
+    width: 900px;
+}
+.shipping-header-top {
+    display: flex;
+    justify-content: space-between;
+}
+.previous-page a {
+    font-size: 30px;
+    text-decoration: none;
+}
+.shipping-main {
+    border: 1px solid rgb(221, 219, 219);
+}
+.shipping-header-bottom h1 {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 56px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.shipping-address h2 {
+    border: 1px solid rgb(221, 219, 219);
+    padding: 5px;
+}
+.shipping-address form input {
+    display: inline-block;
+}
+.phone-number ul {
+    padding: 0;
+}
+.email {
+    display: flex;
+    justify-content: space-between;
+}
+.message-select {
+    height: 50px;
+    border: 1px solid rgb(221, 219, 219);
+    background-color: rgb(221,219, 219);
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+}
+.message-select select {
+    height: 35px;
+    width: 800px;
+    font-size: 14px;
+}
+.order-product-image {
+    display: inline-block;
+    height: 120px;
+}
+.order-product-list {
+    display: inline-block;
+    height: 120px;
+    /* line-height: 120px; */
+}
+.order-product-list li {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
