@@ -1,99 +1,184 @@
+body {
+  font-family: Verdana, "맑은 고딕", Malgun Gothic, AppleSDGothicNeo, "돋움",
+    Dotum;
+  line-height: 1.4em;
+  letter-spacing: -0.4px;
+}
 .order {
-    width: 900px;
-    margin: auto;
-    height: 3000px;
+  width: 900px;
+  margin: auto;
+  height: 3000px;
 }
 li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+table {
+  width: 100%;
+  border: 0;
+}
+.h-wrap {
+  padding: 16px;
+}
+.h {
+  margin: 0;
+}
+.text-13px {
+  font-size: 13px;
+}
+.sp-th-common {
+  padding: 14px 0 14px 14px;
+}
+.sp-td-common {
+  padding: 8px 14px 7px 8px;
+}
+.sp-input-common {
+  padding: 7px;
+  width: 98%;
+  line-height: 16px;
+  height: 22px;
 }
 .shipping-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    background-color: white;
-    width: 900px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  background-color: white;
+  width: 900px;
 }
 .shipping-header-top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .previous-page a {
-    font-size: 30px;
-    text-decoration: none;
+  font-size: 30px;
+  text-decoration: none;
 }
 .shipping-main {
-    border: 1px solid rgb(221, 219, 219);
+  border: 1px solid rgb(221, 219, 219);
 }
 .shipping-header-bottom h1 {
-    background-color: gray;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    line-height: 56px;
-    padding-top: auto;
-    padding-bottom: auto;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 56px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 .shipping-address h2 {
-    border: 1px solid rgb(221, 219, 219);
-    padding: 5px;
+  padding: 5px;
 }
-.shipping-address form input {
-    display: inline-block;
+.input-address-number {
+  width: 20%;
+}
+.shipping-address-content {
+  border: 1px solid rgb(221, 219, 219);
+}
+.address-number-button {
+  height: 40px;
+}
+.shipping-address-content-form {
+  padding: 14px;
+}
+.shipping-address-content-form form input {
+  display: inline-block;
 }
 .phone-number ul {
-    padding: 0;
+  padding: 0;
+}
+.first-phone-number {
+  height: 40px;
+  width: 23%;
+  font-size: 14px;
+}
+.phone-number-content {
+  width: 23%;
 }
 .email {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.email-text {
+  width: 40%;
+}
+.email-select {
+  font-size: 16px;
 }
 .message-select {
-    height: 50px;
-    border: 1px solid rgb(221, 219, 219);
-    background-color: rgb(221,219, 219);
-    vertical-align: middle;
-    text-align: center;
-    line-height: 50px;
+  height: 50px;
+  border: 1px solid rgb(221, 219, 219);
+  background-color: rgb(250, 250, 250);
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
 }
 .message-select select {
-    height: 35px;
-    width: 800px;
-    font-size: 14px;
+  height: 40px;
+  width: 800px;
+  font-size: 14px;
+}
+.normal-shipping-address {
+  border: 1px solid rgb(221, 219, 219);
+  font-size: 16px;
+}
+.normal-shipping-address input {
+  width: 25px;
+  height: 25px;
+}
+.order-product {
+  display: flex;
+  border: 1px solid rgb(221, 219, 219);
+  padding: 20px;
 }
 .order-product-image {
-    display: inline-block;
-    height: 120px;
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border: 1px solid rgb(221, 219, 219);
 }
 .order-product-list {
-    display: inline-block;
-    height: 120px;
-    /* line-height: 120px; */
+  display: inline-block;
+  height: 120px;
+  padding-left: 15px;
+  /* line-height: 120px; */
 }
 .order-product-list li {
-    display: block;
+  display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.payment-information {
+  border: 1px solid rgb(221, 219, 219);
+  padding: 20px;
+}
+.left {
+  text-align: left;
+  padding: 5px 0 5px 14px;
+  width: 110px;
+}
+.right {
+  text-align: right;
+  padding: 5px 14px 5px 5px;
+  width: 700px;
+}
+.payment-amount {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(221, 219, 219);
+  margin-top: 10px;
+  padding: 13px 15px 13px 15px;
+}
+.payment-amount h3 {
+  margin: 0;
+}
+.payment-result {
+  /* line-height: 60px; */
+}
+.payment-method {
+  /* display: flex; */
+}

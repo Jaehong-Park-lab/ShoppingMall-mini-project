@@ -32,127 +32,147 @@
         </header>
         <div class="shipping-main">
             <div class="shipping-address">
-                <h2>배송지</h2>
-                <form>
-                    <input type="radio" name="1" id="equal" value="equal">회원 정보와 동일
-                    <input type="radio" name="1" id="new" value="new">새로운 배송지
-                </form>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>받는 사람</th>
-                            <td><input type="text" placeholder="이름"></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th rowspan="3">주소</th>
-                            <td><input type="text" placeholder="우편번호"></td>
-                        </tr>
-                        <tr>
+                <div class="h-wrap">
+                    <h2 class="h">배송지</h2>
+                </div>
+                <div class="shipping-address-content">
+                    <div class="shipping-address-content-form">
+                        <form>
+                            <input type="radio" name="1" id="equal" value="equal">회원 정보와 동일
+                            <input type="radio" name="1" id="new" value="new">새로운 배송지
+                        </form>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="sp-th-common">받는 사람</th>
+                                <td class="sp-td-common"><input class="sp-input-common" type="text" placeholder="이름">
+                                </td>
+                            </tr>
 
-                            <td><input type="text" placeholder="기본주소"></td>
-                        </tr>
-                        <tr>
-
-                            <td><input type="text" placeholder="나머지 주소(선택 입력 가능)"></td>
-                        </tr>
-                        <tr class="phone-number">
-                            <th>휴대전화</th>
-                            <td>
-                                <ul>
-                                    <li>
-                                        <select name="first-phone-number">
+                            <tr>
+                                <th class="sp-th-common" rowspan="3">주소</th>
+                                <td class="sp-td-common">
+                                    <input type="text" class="form-control m-input sp-input-common input-address-number"
+                                        name="postcode" id="postcode" placeholder="우편번호" readonly />
+                                    <button type="button" class="btn btn-info m-btn--air address-number-button"
+                                        onclick="execDaumPostcode()">우편번호 찾기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sp-td-common"><input type="text"
+                                        class="form-control m-input m--margin-top-10 sp-input-common" name="address"
+                                        id="address" placeholder="도로명 주소" readonly />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sp-td-common"><input type="text"
+                                        class="form-control m-input m--margin-top-10 sp-input-common"
+                                        name="detailAddress" placeholder="상세 주소" required /></td>
+                            </tr>
+                            <tr class="phone-number">
+                                <th class="sp-th-common">휴대전화</th>
+                                <td class="sp-td-common">
+                                    <ul>
+                                        <select class="first-phone-number" name="first-phone-number">
                                             <option value="010">010</option>
                                             <option value="011">011</option>
                                             <option value="017">017</option>
                                         </select>
-                                    </li>
-                                    -
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                    -
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>이메일</th>
-                            <td>
-                                <ul class="email">
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                    <span>@</span>
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="message-select">
-                    <select>
-                        <option value="1">---메시지 선택(선택사항)---</option>
-                        <option value="1">배송 전 미리 연락 부탁드립니다</option>
-                        <option value="1">부재 시 경비실에 맡겨주세요</option>
-                        <option value="1">부재 시 문 앞에 놔주세요</option>
-                        <option value="1">빠른 배송 부탁드립니다</option>
-                        <option value="1">택배함에 보관해 주세요</option>
-                    </select>
+                                        -
+                                        <input class="sp-input-common phone-number-content" type="text">
+                                        -
+                                        <input class="sp-input-common phone-number-content" type="text">
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="sp-th-common">이메일</th>
+                                <td class="sp-td-common">
+                                    <div class="email">
+                                        <input class="sp-input-common email-text" type="text">
+                                        @
+                                        <select class="email-text email-select" name="email-end" id="email-end">
+                                            <option value="none">-이메일 선택-</option>
+                                            <option value="naver">naver.com</option>
+                                            <option value="daum">daum.net</option>
+                                            <option value="nate">nate.com</option>
+                                            <option value="yahoo">yahoo.com</option>
+                                            <option value="gmail">gmail.com</option>
+                                            <option value="direct">직접입력</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="message-select">
+                        <select>
+                            <option value="1">---메시지 선택(선택사항)---</option>
+                            <option value="1">배송 전 미리 연락 부탁드립니다</option>
+                            <option value="1">부재 시 경비실에 맡겨주세요</option>
+                            <option value="1">부재 시 문 앞에 놔주세요</option>
+                            <option value="1">빠른 배송 부탁드립니다</option>
+                            <option value="1">택배함에 보관해 주세요</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="normal-shipping-address">
-                    <input type="checkbox">기본 배송지로 저장
+                <div class="normal-shipping-address h-wrap">
+                    <input type="checkbox" id="set-normal-address"><label for="set-normal-address">기본 배송지로 저장</label>
                 </div>
+
             </div>
             <div>
-                <h2>주문상품</h2>
+                <div class="h-wrap">
+                    <h2 class="h">주문상품</h2>
+                </div>
                 <div class="order-product">
                     <div class="order-product-image">
-                        <a href="#"><img src="/b9c7be01115eb819bf4c7915507e4090.webp" alt="오버 핏 소매라인 니트" width="120px"></a>
+                        <a href="#"><img src="/b9c7be01115eb819bf4c7915507e4090.webp" alt="오버 핏 소매라인 니트"
+                                width="90px"></a>
                     </div>
                     <div class="order-product-list">
                         <ul>
                             <li><span>4col 오리발 니트</span></li>
-                            <li><span>[옵션: 블랙/ONE]</span></li>
-                            <li><span>수량: 1개</span></li>
-                            <li><span>상품구매금액:KRW 55,000</span></li>
-                            <li><span>[무료]/기본배송(해외배송 가능)</span></li>
+                            <li><span class="text-13px">[옵션: 블랙/ONE]</span></li>
+                            <li><span class="text-13px">수량: 1개</span></li>
+                            <li><span class="text-13px">상품구매금액:KRW 55,000</span></li>
+                            <li><span class="text-13px">[무료]/기본배송(해외배송 가능)</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div>
-                <h2>결제정보</h2>
-                <div>
+                <div class="h-wrap">
+                    <h2 class="h">결제정보</h2>
+                </div>
+                <div class="payment-information">
                     <ul>
                         <table>
                             <tr>
-                                <th>주문상품</th>
-                                <td>KRW 55,000</td>
+                                <th class="left">주문상품</th>
+                                <td class="right">KRW 55,000원</td>
                             </tr>
                             <tr>
-                                <th>할인/부가결제</th>
-                                <td>-KRW 0원</td>
+                                <th class="left">할인/부가결제</th>
+                                <td class="right">-KRW 0원</td>
                             </tr>
                             <tr>
-                                <th>배송비</th>
-                                <td>+KRW 0원</td>
+                                <th class="left">배송비</th>
+                                <td class="right">+KRW 0원</td>
                             </tr>
                         </table>
-                        <div>
+                        <div class="payment-amount">
                             <h3>결제금액</h3>
-                            <strong>KRW 55,000원</strong>
+                            <strong class="payment-result">KRW 55,000원</strong>
                         </div>
                     </ul>
                 </div>
             </div>
-            <div>
-                <h2>결제수단</h2>
+            <div class="payment-method">
+                <div class="h-wrap">
+                    <h2 class="h">결제수단</h2>
+                </div>
                 <div>
                     <div>
                         <span>결제수단</span>
@@ -173,7 +193,56 @@
                     </table>
                 </div>
             </div>
+            <!-- 약관동의 -->
+            <div class="agreement-area">
+                <div class="allAgree">
+                    <input type="checkbox" id="allAgree">
+                    <label for="allAgree"><strong>모든 약관 동의</strong></label>
+                </div>
+                <div class="agreement">
+                    <ul>
+                        <li>
+                            <div class="agree">
+                                <span class="check">
+                                    <input type="checkbox" name="cb2" class="ab"> <label><span>[필수]</span>결제대행서비스 약관
+                                        동의</label>
+                                </span>
+                            </div>
+                            <div class="agree">
+                                <span class="check">
+                                    <input type="checkbox" name="cb3" class="ab"> <label><span>[필수]</span>결제대행서비스 약관
+                                        동의</label>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 </body>
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    /** 우편번호 찾기 */
+    function execDaumPostcode() {
+        daum.postcode.load(function () {
+            new daum.Postcode({
+                oncomplete: function (data) {
+                    $("#postcode").val(data.zonecode);
+                    $("#address").val(data.roadAddress);
+                }
+            }).open();
+        });
+    }
+    // 약관 동의
+
+    $(document).ready(function () {
+        $('#allAgree').click(function () {
+            $('.ab').prop('checked', this.checked);
+        });
+    });
+
+</script>
 
 </html>
