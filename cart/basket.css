@@ -10,10 +10,10 @@ ul {
   padding: 0;
 }
 th, td {
-  /* border: 3px solid red; */
   float: left;
+  border: 0;
 }
-table {
+table, tr {
   width: 100%;
 }
 .cart-wrap {
@@ -23,7 +23,7 @@ table {
   margin-left: auto;
   margin-right: auto;
   }
- .menu li {
+.menu li {
   display: inline-block;
   border: 1px solid black;
   height: 40px;
@@ -37,6 +37,7 @@ table {
 .basketlist {
   text-align: center;
   height: 500px;
+  border-bottom: 1px solid rgb(192, 192, 192);
 }
 .basketlist-title-wrap {
   border-top: 1px solid black;
@@ -53,24 +54,16 @@ table {
   border: 0;
   line-height: 30px;
 }
-.indevidual-basketlist-content {
+.individual-basketlist-content {
   border-bottom: 1px solid rgb(192, 192, 192);
 }
-.indevidual-basketlist-content li {
-  height: 100px;
-  line-height: 100px;
-}
-.order-select {
-  border: 3px solid red;
-}
-
 .order-select input {
   font-size: 13px;
 }
 .basket-clear {
   height: 30px;
   padding: 0 20px 20px 0;
-  margin-bottom: 40px;
+  margin: 40px 0 40px 0;
 }
 .basket-left {
   float: left;
@@ -79,19 +72,28 @@ table {
   float: right;
 }
 .payment-result {
+  width: 100%;
   height: 110px;
 }
-.payment-result tr, td{
+.payment-result th, .payment-result td{
   text-align: center;
   border: 1px solid rgb(192, 192, 192);
   padding-right: 0px;
-  float: left;
-  height: 30px;
+  /* float: left; */
+}
+.payment-result th {
+  height: 40px;
+  line-height: 40px;
+}
+.payment-result td {
+  height: 60px;
+  line-height: 60px;
 }
 .order-button {
   margin: 15px 0 15px 0;
-  border: 3px solid red;
+  text-align: center;
 }
+
 .information-use ol {
   padding-left: 20px;
 }
