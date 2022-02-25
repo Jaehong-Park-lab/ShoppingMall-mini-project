@@ -7,7 +7,7 @@ body {
 .order {
   width: 900px;
   margin: auto;
-  height: 3000px;
+  /* height: 3000px; */
 }
 li {
   list-style: none;
@@ -151,6 +151,7 @@ table {
 }
 .order-product-list li {
   display: block;
+  margin-bottom: 5px;
 }
 .payment-information {
   border: 1px solid rgb(221, 219, 219);
@@ -181,4 +182,39 @@ table {
 }
 .payment-method {
   /* display: flex; */
+}
+.agreement {
+  width: 100%;
+}
+.agreement ul {
+  width: 100%;
+}
+.agreement ul li {
+  width: 100%;
+}
+.allAgree {
+  width: 100%;
+}
+.allAgree label {
+  width: 100%;
+}
+.checkbox {
+  width: 100%;
+  padding: 5px;
+  border: 1px soid rgb(221, 219, 219);
+}
+.agree {
+  padding: 5px;
+  border: 1px solid rgb(221, 219, 219);
+  width: 100%;
+}
+.order-button {
+  text-align: center;
+  padding: 10px 0;
+}
+.order-button-common {
+  background-color: rgb(219, 219, 219);
+  width: 130px;
+  height: 40px;
+  border: 1px solid rgb(202, 202, 202);
 }
