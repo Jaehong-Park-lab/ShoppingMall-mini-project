@@ -101,3 +101,7 @@ table, tr {
   font-size: 13px;
   list-style: decimal;
 }
+.payment-table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}

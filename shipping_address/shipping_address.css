@@ -21,8 +21,13 @@ table {
   width: 100%;
   border: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .h-wrap {
   padding: 16px;
+  border-bottom: 1px solid rgb(202, 202, 202);
 }
 .h {
   margin: 0;
@@ -177,14 +182,19 @@ table {
 .payment-amount h3 {
   margin: 0;
 }
-.payment-result {
-  /* line-height: 60px; */
+.payment-method-wrap {
+  width: 100%;
 }
 .payment-method {
-  /* display: flex; */
+  width: 100%;
+}
+.payment-method-rd {
+  width: 100%;
+  padding: 20px;
+  border: 1px soid rgb(221, 219, 219);
 }
 .agreement {
-  width: 100%;
+  width: 98.8%;
 }
 .agreement ul {
   width: 100%;
@@ -194,6 +204,7 @@ table {
 }
 .allAgree {
   width: 100%;
+  padding: 10px 5px 5px 5px;
 }
 .allAgree label {
   width: 100%;
@@ -217,4 +228,11 @@ table {
   width: 130px;
   height: 40px;
   border: 1px solid rgb(202, 202, 202);
+}
+.acount-nam-wrap {
+  border-top: 1px solid rgb(202, 202, 202);
+  padding: 16px;
+}
+.acount-name {
+  width: 80px;
 }

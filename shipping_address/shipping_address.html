@@ -18,7 +18,7 @@
                         < </a>
                 </div>
                 <a href="/index/inedex.html">
-                    <h2>d'Arles</h2>
+                    <h2>D'Arles</h2>
                 </a>
                 <div class="cart-icon">
                     <a href="/cart/basket.html">
@@ -169,25 +169,24 @@
                     </ul>
                 </div>
             </div>
-            <div class="payment-method">
+            <div class="payment-method-wrap">
                 <div class="h-wrap">
                     <h2 class="h">결제수단</h2>
                 </div>
-                <div>
-                    <div>
-                        <span>결제수단</span>
-                        <input type="radio" value="1"> 무통장입금
-                        <input type="radio" value="1"> 신용카드
-                        <input type="radio" value="1"> 휴대폰
-                        <input type="radio" value="1"> 에스크로(가상계좌)
-                        <input type="radio" value="1"> 카카오페이
-                        <input type="radio" value="1"> 에스크로(계좌이체)
+                <div class=payment-method">
+                    <div class="payment-method-rd">
+                        <input type="radio" name="1" value="1"> 무통장입금
+                        <input type="radio" name="1" value="2"> 신용카드
+                        <input type="radio" name="1" value="3"> 휴대폰
+                        <input type="radio" name="1" value="4"> 에스크로(가상계좌)
+                        <input type="radio" name="1" value="5"> 카카오페이
+                        <input type="radio" name="1" value="6"> 에스크로(계좌이체)
                     </div>
                 </div>
-                <div>
+                <div class="acount-nam-wrap">
                     <table>
                         <tr>
-                            <th>예금주명</th>
+                            <th class="acount-name">예금주명</th>
                             <td><input type="text"></td>
                         </tr>
                     </table>
@@ -220,7 +219,7 @@
             </div>
         </div>
         <div class="order-button">
-            <a href="/ordercomplete/ordercomplete.html"><input class="order-button-common" type="button" value="결제하기"></a>
+            <a href="/ordercomplete/ordercomplete.html"><input class="order-button-common" type="button" value="결제하기" onclick="button-click()"></a>
             <a href="/cart/basket.html"><input class="order-button-common" type="button" value="취소하기"></a>
         </div>
     </div>
@@ -241,13 +240,11 @@
         });
     }
     // 약관 동의
-
     $(document).ready(function () {
         $('#allAgree').click(function () {
             $('.ab').prop('checked', this.checked);
         });
     });
-
-</script>
+    </script>
 
 </html>
