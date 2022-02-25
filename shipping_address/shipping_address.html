@@ -80,9 +80,11 @@
                                             <option value="017">017</option>
                                         </select>
                                         -
-                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4" onkeypress="inNumber();">
+                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4"
+                                            onkeypress="inNumber();">
                                         -
-                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4" onkeypress="inNumber();">
+                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4"
+                                            onkeypress="inNumber();">
                                     </ul>
                                 </td>
                             </tr>
@@ -90,8 +92,8 @@
                                 <th class="sp-th-common">이메일</th>
                                 <td class="sp-td-common">
                                     <div class="email">
-                                        <input class="sp-input-common email-text" type="text">
-                                        @
+                                        <input class="sp-input-common-2" type="text" name="str_email01" id="str_email01"> @
+                                        <input class="sp-input-common-2" type="text" name="str_email02" id="str_email02" disabled value="naver.com">
                                         <select class="email-text email-select" name="email-end" id="email-end">
                                             <option value="none">-이메일 선택-</option>
                                             <option value="naver">naver.com</option>
@@ -99,7 +101,7 @@
                                             <option value="nate">nate.com</option>
                                             <option value="yahoo">yahoo.com</option>
                                             <option value="gmail">gmail.com</option>
-                                            <option value="direct">직접입력</option>
+                                            <option value="1">직접입력</option>
                                         </select>
                                     </div>
                                 </td>
@@ -219,7 +221,8 @@
             </div>
         </div>
         <div class="order-button">
-            <a href="/ordercomplete/ordercomplete.html"><input class="order-button-common" type="button" value="결제하기" onclick="button-click()"></a>
+            <a href="/ordercomplete/ordercomplete.html"><input class="order-button-common" type="button" value="결제하기"
+                    onclick="button-click()"></a>
             <a href="/cart/basket.html"><input class="order-button-common" type="button" value="취소하기"></a>
         </div>
     </div>
@@ -246,11 +249,14 @@
         });
     });
 
-    function inNumber(){
-          if(event.keyCode<48 || event.keyCode>57){
-             event.returnValue=false;
-          }
-}
-    </script>
+    function inNumber() {
+        if (event.keyCode < 48 || event.keyCode > 57) {
+            event.returnValue = false;
+        }
+    }
+
+    $('#email-end').change(function () { $("#email-end option:selected").each(function () { if ($(this).val() == '1') { $("#str_email02").val(''); $("#str_email02").attr("disabled", false); } else { $("#str_email02").val($(this).text()); $("#str_email02").attr("disabled", true); } }); }); </script>
+
+</script>
 
 </html>
