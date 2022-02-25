@@ -80,9 +80,9 @@
                                             <option value="017">017</option>
                                         </select>
                                         -
-                                        <input class="sp-input-common phone-number-content" type="text">
+                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4" onkeypress="inNumber();">
                                         -
-                                        <input class="sp-input-common phone-number-content" type="text">
+                                        <input class="sp-input-common phone-number-content" type="text" maxlength="4" onkeypress="inNumber();">
                                     </ul>
                                 </td>
                             </tr>
@@ -245,6 +245,12 @@
             $('.ab').prop('checked', this.checked);
         });
     });
+
+    function inNumber(){
+          if(event.keyCode<48 || event.keyCode>57){
+             event.returnValue=false;
+          }
+}
     </script>
 
 </html>
