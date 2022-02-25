@@ -112,12 +112,12 @@ a {
   width: 23%;
 }
 .email {
-  display: flex;
+  display: block;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
 }
 .email-text {
-  width: 40%;
+  width: 20%;
 }
 .email-select {
   font-size: 16px;
