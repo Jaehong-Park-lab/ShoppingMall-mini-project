@@ -1,9 +1,5 @@
 body{
-<<<<<<< HEAD
-  background-color: #1cbb9b;
-=======
   background-color: white
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 .login-box{
   position:relative;
@@ -82,11 +78,7 @@ box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
   height:auto;
   margin-top: 20px;
   text-align:center;
-<<<<<<< HEAD
-  border: 1px solid blue;
-=======
 
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 
 .email-signup{
@@ -97,11 +89,7 @@ box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
   height:auto;
   margin-top: 20px;
   text-align:center;
-<<<<<<< HEAD
-  border: 1px solid red;
-=======
 
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 .u-form-group{
   width:100%;

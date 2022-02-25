@@ -12,10 +12,7 @@ a{
 
 
 ul{
-<<<<<<< HEAD
-=======
 
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -26,10 +23,7 @@ ul{
 }
 
 div{
-<<<<<<< HEAD
-=======
 
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,26 +39,14 @@ body, code{
     font: 0.75em Verdana, Dotum, AppleGothic, sans-serif;
     color: #353535;
     background: #fff;
-<<<<<<< HEAD
-    margin: 0;
-    padding: 0;
-=======
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 
  #header{
         position: relative;
-<<<<<<< HEAD
-        border: 1px solid black;
-        font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
-        font: 0.75em Verdana,Dotum,AppleGothic,sans-serif;
-        height: 200px;
-=======
         border-bottom: 1px solid rgb(221, 219, 219)
         font-family: "Roboto","Arial","Nanum Gothic","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
         font: 0.75em Verdana,Dotum,AppleGothic,sans-serif;
         height: 200x;
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
         width: 1100px;
         background: rgba(255, 255, 255, 0.07);
         transition: backgroud 0.2s 0.0s ease-in-out;
@@ -95,11 +77,7 @@ div class{
     font: 0.75em Verdana, Dotum, AppleGothic, sans-serif;
     color: #353535;
     background: #fff;
-<<<<<<< HEAD
-    border: 1px solid black;
-=======
     border: 1px solid rgb(221, 219, 219)
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 /* header */
 
@@ -109,11 +87,7 @@ div class{
     width: 100%;
     z-index: 98;
     border-bottom: 1px solid #e8e8e8;
-<<<<<<< HEAD
-    border-bottom-color: rgba(0, 0, 0, 09);
-=======
     border-bottom-color: rgb(221, 219, 219)
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 }
 #header .bar .inner{
     padding: 0 10px;
@@ -246,10 +220,7 @@ html:lang(ko) body, html:lang(ko) code{
 }
 
 .inner.df-content-wrap{
-<<<<<<< HEAD
-=======
 
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
 vertical-align: auto;
 padding: auto;
 }
@@ -257,12 +228,8 @@ padding: auto;
 .df-lnb{
     width: 100%;
     text-align: center;
-<<<<<<< HEAD
-    border-top: 1px solid rgba(0, 0, 0, 09);
-=======
     border-top: 1px solid rgb(221, 219, 219);
     border-bottom: 1px solid rgb(221, 219, 219);
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
    
 }
 
@@ -270,11 +237,6 @@ padding: auto;
     height: 50px;
 }
 .df-cnb-items{
-<<<<<<< HEAD
-    
-    
-=======
->>>>>>> 30e359684a63a3750c1242deb53272cc1193da85
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
